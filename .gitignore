@@ -1,0 +1,5 @@
+/node_modules
+/dist
+/applications/**/dist
+yarn.lock
+/applications/**/node_modules

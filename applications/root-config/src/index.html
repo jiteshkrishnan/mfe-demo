@@ -1,0 +1,46 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script type="systemjs-importmap">
+            {
+
+                "imports": {
+                    "react": "//cdn.jsdelivr.net/npm/react@16.13.0/umd/react.development.js",
+                    "react-dom": "//cdn.jsdelivr.net/npm/react-dom@16.13.0/umd/react-dom.development.js",
+                    "single-spa": "//cdn.jsdelivr.net/npm/single-spa@5.8.3/lib/system/single-spa.dev.js",
+                    "@react-mf/root-config": "//localhost:7001/react-mf-root-config.js",
+                    "@react-mf/navbar": "//localhost:7002/react-mf-navbar.js",
+                    "@react-mf/contact": "//localhost:7003/react-mf-contact.js",
+                    "@react-mf/todos": "//localhost:7004/react-mf-todos.js"
+                }
+
+            }
+        </script>
+        <script src="//cdn.jsdelivr.net/npm/import-map-overrides/dist/import-map-overrides.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/systemjs/dist/system.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/systemjs/dist/extras/amd.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/systemjs/dist/extras/named-exports.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/systemjs/dist/extras/named-register.js"></script>
+        <template id="single-spa-layout">
+            <single-spa-router base="/">
+                <application name="@react-mf/navbar"></application>
+                        <article>
+                            <route path="contact">
+                                <application name="@react-mf/contact"></application>
+                            </route>
+                            <route path="todos">
+                                <application name="@react-mf/todos"></application>
+                            </route>
+                        </article>
+            </single-spa-router>
+        </template>
+    </head>
+    <body class="mh-100 mw-100">
+       <script>
+            System.import("@react-mf/root-config");
+        </script>
+    </body>
+</html>

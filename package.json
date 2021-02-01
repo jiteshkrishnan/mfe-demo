@@ -1,0 +1,33 @@
+{
+  "name": "mfe_demo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "App showing how a monolith app is converted into MFE",
+  "main": "index.js",
+  "repository": "https://github.com/jiteshkrishnan/mfe_demo.git",
+  "author": "jiteshkrishnan <jitesh.krishnan@gmail.com>",
+  "license": "MIT",
+  "workspaces": {
+    "packages": [
+      "applications/*"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "5.0.0",
+    "css-loader": "^3.0.0",
+    "lerna": "^3.20.2",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.34.0",
+    "webpack-cli": "^3.3.4",
+    "webpack-config-single-spa-react": "1.18.0",
+    "webpack-dev-server": "^3.7.1",
+    "webpack-merge": "^5.7.3"
+  }
+}

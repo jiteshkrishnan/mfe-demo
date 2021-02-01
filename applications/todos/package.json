@@ -1,0 +1,21 @@
+{
+  "name": "todos",
+  "scripts": {
+    "build": "webpack --hide-modules --mode=production",
+    "dev":"webpack-dev-server --port 7004 --inline --hot"
+  },
+  "version": "1.0.0",
+  "main": "react-mfe-todos.js",
+  "license": "MIT",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "prop-types": "^15.7.2",
+    "react": "16.13.0",
+    "react-dom": "16.13.0",
+    "react-redux": "4.4.8",
+    "react-router-dom": "^5.2.0",
+    "redux": "3.7.2",
+    "single-spa-react": "^4.0.0",
+    "todomvc-app-css": "^2.3.0"
+  }
+}

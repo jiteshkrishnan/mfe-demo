@@ -1,0 +1,14 @@
+{
+  "name": "root-config",
+  "scripts": {
+    "build": "webpack --hide-modules --mode=production",
+    "root-dev":"webpack-dev-server --port 7001 --inline --hot --open"
+  },
+  "version": "1.0.0",
+  "main": "react-mfe-root.js",
+  "license": "MIT",
+  "dependencies": {
+    "single-spa": "^5.9.1",
+    "single-spa-layout": "^1.4.0"
+  }
+}

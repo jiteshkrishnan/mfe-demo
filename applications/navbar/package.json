@@ -1,0 +1,13 @@
+{
+  "name": "navbar",
+  "scripts": {
+    "build": "webpack --hide-modules --mode=production",
+    "dev": "webpack-dev-server --port 7002 --inline --hot"
+  },
+  "version": "1.0.0",
+  "main": "react-mfe-navbar.js",
+  "license": "MIT",
+  "dependencies": {
+    "@reach/router": "^1.3.4"
+  }
+}
